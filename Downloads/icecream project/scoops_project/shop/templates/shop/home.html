@@ -1,0 +1,330 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+.card {
+  transition: all 0.3s ease;
+  border-radius: 15px !important;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(248, 164, 184, 0.4) !important;
+}
+.card img {
+  transition: transform 0.4s ease;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+</style>
+
+</head>
+<body>
+ 
+
+    <nav class="navbar navbar-expand-lg style=#fff8f0:">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#" style="color:#c76b8a;"> Scoops</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" style="color:#c76b8a; font-weight:600;" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/flavors/">Flavors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about/">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/contact/">Locations</a>
+        </li>
+      </ul>
+      <a class="btn" style="background:#f8a4b8; color:white; border-radius:20px;">Order Now</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center">
+  <div class="row align-items-center" style="background-color: #fff5f2; border-radius: 20px; padding: 15px 35px; min-height:340px;">
+    <div class="col">
+     <h1 style="font-weight: 800; color:#4a2c2a; line-height:1.2;">Handcrafted Ice Cream <br> Made with Love</h1> 
+     <button type="button" class="btn" href="/about/" style="border: 1px solid #c76b8a; color: #c76b8a; border-radius: 20px;">Our Story </button>
+      <button type="button" class="btn" href="/flavors/" style="background-color: #f8a4b8; color: white; border-radius: 20px;">Shop Flavors</button>
+    </div>
+    <div class="col">
+      <img src="{% static 'images/icecream.webp' %}" class="img-fluid" style="max-height:300px; width: auto; margin: auto; display: block; mix-blend-mode:multiply;">
+    </div>
+    </div>
+  </div>
+
+ <div class="container mt-5">
+  <div class="row">
+
+    <div  class="col-md-4 mb-4 p-2">
+      <div class="card border-0 shadow-sm h-100" style="background:#fff5f2; border-radius:15px;">
+        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=708&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="card-img-top" style=" height: 220px; object-fit: cover; border-radius:15px 15px 0 0;" alt="Vanilla">
+        <div class="card-body">
+          <h5>Vanilla bean</h5>
+          <p>Classic vanilla bean with real vanilla bean specks</p>
+          <a href="#" onclick="window.open('https://wa.me/919999999999?text=Hi, I want Vanilla bean ice cream 🍦','_blank'); return false;" class="btn btn-sm mt-auto" style="background:#f8a4b8; color:white; border-radius:20px;">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 p-2">
+      <div class="card border-0 shadow-sm h-100" style="background:#fff5f2; border-radius:15px;">
+        <img src="https://images.unsplash.com/photo-1603736029103-dafad0eb0906?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="card-img-top" style=" height: 220px; object-fit: cover; border-radius:15px 15px 0 0;" alt="Pistachio">
+        <div class="card-body">
+          <h5>Pistachio</h5>
+          <p>Nutty, creamy pistachio made with real pistachio</p>
+         <a href="#" onclick="window.open('https://wa.me/919999999999?text=Hi, I want Pistachio ice cream 🍦','_blank'); return false;" class="btn btn-sm mt-auto" style="background:#f8a4b8; color:white; border-radius:20px;">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 p-2">
+      <div class="card border-0 shadow-sm h-100" style="background:#fff5f2; border-radius:15px;">
+        <img src="https://images.unsplash.com/photo-1579462107238-0ff854b04810?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="card-img-top" style=" height: 220px; object-fit: cover; border-radius:15px 15px 0 0;" alt="Pistachio">
+        <div class="card-body">
+          <h5>Mango Sorbet</h5>
+          <p>tropical annd refreshing made with fresh mangoes</p>
+         <a href="#" onclick="window.open('https://wa.me/919999999999?text=Hi, I want Pistachio ice cream 🍦','_blank'); return false;" class="btn btn-sm mt-auto" style="background:#f8a4b8; color:white; border-radius:20px;">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4 p-2">
+      <div class="card border-0 shadow-sm h-100" style="background:#fff5f2; border-radius:15px;">
+        <img src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="card-img-top" style=" height: 220px; object-fit: cover; border-radius:15px 15px 0 0;" alt="Pistachio">
+        <div class="card-body">
+          <h5>Chocolate</h5>
+          <p>Rich  Belgian chocolate with fudge choco</p>
+         <a href="#" onclick="window.open('https://wa.me/919999999999?text=Hi, I want Pistachio ice cream 🍦','_blank'); return false;" class="btn btn-sm mt-auto" style="background:#f8a4b8; color:white; border-radius:20px;">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 mb-4 p-2">
+      <div class="card border-0 shadow-sm h-100" style="background:#fff5f2; border-radius:15px;">
+        <img src='/scoops_project/static/images/kulfi.jpeg' class="card-img-top" style=" height: 220px; object-fit: cover; border-radius:15px 15px 0 0;" alt="Pistachio">
+        <div class="card-body">
+          <h5>Kulfi</h5>
+          <p>slow- cooked malai kulfi with kesar pista</p>
+         <a href="#" onclick="window.open('https://wa.me/919999999999?text=Hi, I want Pistachio ice cream 🍦','_blank'); return false;" class="btn btn-sm mt-auto" style="background:#f8a4b8; color:white; border-radius:20px;">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-md-4 mb-4 p-2">
+      <div class="card border-0 shadow-sm h-100" style="background:#fff5f2; border-radius:15px;">
+        <img src="https://images.unsplash.com/photo-1633933358116-a27b902fad35?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" class="card-img-top" style=" height: 220px; object-fit: cover; border-radius:15px 15px 0 0;" alt="Strawberry">
+        <div class="card-body">
+          <h5>Strawberry</h5>
+          <p>Sweet and fruity, made with real strawberries </p>
+          <a href="#" onclick="window.open('https://wa.me/919999999999?text=Hi, I want Strawberry ice cream 🍦','_blank'); return false;" class="btn btn-sm mt-auto" style="background:#f8a4b8; color:white; border-radius:20px;">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+<div class="container my-5">
+  <div class="row p-4 rounded-4 align-items-center" style="background: linear-gradient(135deg, #ff758f, #ff4d6d); color: white; min-height:180px;">
+    <div class="col-md-8">
+      <span class="badge bg-white text-dark rounded-pill px-3 py-1 mb-2 fw-bold">BEST SELLER</span>
+      <h3 class="fw-bold">Strawberry Swirl - Most Loved!</h3>
+      <p class="mb-3">Our most loved flavor with real strawberries and creamy swirls.</p>
+      <button class="btn btn-light rounded-pill px-4 fw-bold" style="color:#e91e63;">Shop Best Seller →</button>
+    </div>
+    <div class="col-md-4 text-center">
+      <div style="font-size:90px;">🍓🍨</div>
+      <small>⭐⭐⭐⭐⭐ 1,200+ reviews</small>
+    </div>
+  </div>
+</div>
+
+<!-- STATS STRIP -->
+<div class="container">
+  <div class="row text-center g-3 py-4 rounded-4" style="background:#fff0f3;">
+    <div class="col-4">
+      <h3 class="fw-bold" style="color:#ff4d6d;">1200+</h3>
+      <small>Happy Customers</small>
+    </div>
+    <div class="col-4">
+      <h3 class="fw-bold" style="color:#ff4d6d;">15+</h3>
+      <small>Flavors</small>
+    </div>
+    <div class="col-4">
+      <h3 class="fw-bold" style="color:#ff4d6d;">4.9★</h3>
+      <small>Rating</small>
+    </div>
+  </div>
+</div>
+
+<!-- CUSTOMER REVIEWS START -->
+<div class="container my-5">
+  <div class="text-center mb-4">
+    <h3 class="fw-bold" style="color:#590d22;">What Our Customers Say</h3>
+    <p class="text-muted">⭐ 4.9/5 rated by 1200+ happy customers in Faridabad</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Review 1 -->
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm rounded-4 h-100 p-3">
+        <div class="d-flex align-items-center mb-2">
+          <div class="rounded-circle bg-warning text-dark fw-bold d-flex align-items-center justify-content-center" style="width:40px; height:40px;">A</div>
+          <div class="ms-2">
+            <h6 class="mb-0 fw-bold">Aman Sharma</h6>
+            <small class="text-muted">Faridabad</small>
+          </div>
+          <div class="ms-auto text-warning">★★★★★</div>
+        </div>
+        <p class="small mb-0">"Chocolate flavour toh next level hai! Bilkul Belgian jaisa taste. Best in town."</p>
+      </div>
+    </div>
+
+    
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm rounded-4 h-100 p-3">
+        <div class="d-flex align-items-center mb-2">
+          <div class="rounded-circle bg-danger text-white fw-bold d-flex align-items-center justify-content-center" style="width:40px; height:40px;">P</div>
+          <div class="ms-2">
+            <h6 class="mb-0 fw-bold">Priya Singh</h6>
+            <small class="text-muted">Delhi</small>
+          </div>
+          <div class="ms-auto text-warning">★★★★★</div>
+        </div>
+        <p class="small mb-0">"Kulfi me bachpan ka swaad aa gaya. Kesar pista ekdum original!"</p>
+      </div>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm rounded-4 h-100 p-3">
+        <div class="d-flex align-items-center mb-2">
+          <div class="rounded-circle bg-success text-white fw-bold d-flex align-items-center justify-content-center" style="width:40px; height:40px;">R</div>
+          <div class="ms-2">
+            <h6 class="mb-0 fw-bold">Rahul Verma</h6>
+            <small class="text-muted">Gurgaon</small>
+          </div>
+          <div class="ms-auto text-warning">★★★★★</div>
+        </div>
+        <p class="small mb-0">"Strawberry Swirl my kids' favourite. Fresh strawberries, not artificial."</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FEEDBACK FORM START -->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card border-0 shadow-sm rounded-4 p-4" style="background: #fffafb;">
+        <div class="text-center mb-3">
+          <h4 class="fw-bold" style="color:#590d22;">💬 Give Your Feedback</h4>
+          <p class="small text-muted">Your feedback makes our ice cream better!</p>
+        </div>
+        
+        <form id="feedbackForm">
+          <div class="row g-2 mb-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control rounded-3" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6">
+              <select class="form-select rounded-3" required>
+                <option value="">Rate Us</option>
+                <option>⭐⭐⭐⭐⭐ - Excellent</option>
+                <option>⭐⭐⭐⭐ - Very Good</option>
+                <option>⭐⭐⭐ - Good</option>
+                <option>⭐⭐ - Okay</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <textarea class="form-control rounded-3" rows="3" placeholder="Which flavor did you try? How was the taste?" required></textarea>
+          </div>
+          
+          <div class="text-center">
+            <button type="submit" class="btn rounded-pill px-5 fw-bold text-white" style="background:#590d22;">Submit Feedback</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FEEDBACK FORM END -->
+
+<script>
+document.getElementById('feedbackForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  alert('Thank you for your feedback! 🙏❤️');
+  this.reset();
+});
+</script>
+
+<!-- WHY US - add after reviews, before footer -->
+<div class="container my-5">
+  <div class="row g-3 text-center">
+    <div class="col-md-4"><div class="p-4 rounded-4" style="background:#fff8e1;">🥛
+        <h6 class="fw-bold mt-2">100% Pure Milk</h6><small class="text-muted">No powder, daily fresh</small></div></div>
+    <div class="col-md-4"><div class="p-4 rounded-4" style="background:#ffe0e6;">🍓<h6 class="fw-bold mt-2">Real Fruits</h6><small class="text-muted">No artificial flavour</small></div></div>
+    <div class="col-md-4"><div class="p-4 rounded-4" style="background:#e0f2f1;">🚚<h6 class="fw-bold mt-2">30 Min Delivery</h6><small class="text-muted">In Faridabad</small></div></div>
+  </div>
+</div>
+
+
+<footer class="py-5 mt-5" style="background:#fff0f3;">
+  <div class="container px-4">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5 style="color:#d6336c; font-weight:bold;">🍦 Ice Cream Shop</h5>
+        <p>Handcrafted with love, serving happiness since 2024.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h6 style="font-weight:bold;">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Flavors</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h6 style="font-weight:bold;">Contact</h6>
+        <p>📍 Faridabad, Haryana<br>📞 +91 98XXXXXXX</p>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center text-muted mb-0">© 2026 Ice Cream Love</p>
+  </div>
+</footer>
+
+
+<script>
+function openOrder(flavor, imgSrc){
+  document.getElementById('flavorName').innerText = flavor;
+  document.getElementById('flavorImg').src = imgSrc;
+  var myModal = new bootstrap.Modal(document.getElementById('orderModal'));
+  myModal.show();
+}
+</script>
+
+</body>
+</html>
